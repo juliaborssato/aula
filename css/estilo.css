@@ -1,15 +1,85 @@
 h1 {
-    color: red;
+    color: rgb(38, 153, 182);
+    border: 0.5rem solid rgb(38, 153, 182);
 }
-
-h1#page1{
-        color:brown;
+h2,h3,h4,h5,h6{
+    display: none;
 }
-
-h1.page2{
-    color:blueviolet;
-}
-
 body ul li {
-    color:blue;
+    color: black;
+}
+p{
+    text-decoration: underline #ccc double 0.1rem;
+    text-indent: 1rem;
+}
+p.maiusculo{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1rem;
+    line-height: 2rem;
+    word-spacing: 2rem;
+    color: rgb(38, 153, 182);
+    font: normal small-caps bold 2rem monospace;
+    text-shadow: 0.2rem 0.2rem 0.3rem black, 0 0 1rem rgb(38, 153, 182), 0 0 2rem rgb(38, 153, 182);
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: rgb(38, 153, 182);
+}
+a:hover{
+    color: rgb(38, 153, 182);
+}
+footer{
+    clear:both;
+    background: white url('../img/t-removebg-preview.png') no-repeat left bottom;
+    height: 1rem;
+}
+div{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: inline;
+    z-index: 2rem;
+    background-color: lightgreen;
+    color: white;
+    border: 0.2rem solid darkgreen;
+    padding: 0.2rem;
+    font-size: 2rem;
+}
+h1#page1{
+    color: rgb(38, 153, 182);
+    border: 0.3rem dotted rgb(38, 153, 182);
+}
+img{
+    width: 20rem;
+}
+ul{
+    list-style-type: square;
+}
+h1.page2{
+color: rgb(38, 153, 182);
+border: 1rem groove rgb(38, 153, 182);
+border-radius: 0.4rem;
+}
+    ol{
+        list-style-type: upper-roman;
+}
+section img {
+    float: left;
+}
+main.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+main.flexbox {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+main.flexbox  article {
+    background-color: rgb(38, 153, 182);
+    margin:1rem;
+    padding:2rem;
 }
